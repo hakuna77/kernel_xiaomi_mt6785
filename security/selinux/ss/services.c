@@ -533,7 +533,7 @@ out:
  * security_boundary_permission - drops violated permissions
  * on boundary constraint.
  */
-static void type_attribute_bounds_av(struct policydb *policydb,
+static noinline void type_attribute_bounds_av(struct policydb *policydb,
 				     struct context *scontext,
 				     struct context *tcontext,
 				     u16 tclass,
