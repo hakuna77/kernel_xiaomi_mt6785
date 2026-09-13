@@ -36,7 +36,6 @@
 #include "fpsgo_base.h"
 #include "fpsgo_sysfs.h"
 
-#ifdef CONFIG_TRACING
 FPSFO_DECLARE_SYSTRACE(x, irq_handler_entry)
 FPSFO_DECLARE_SYSTRACE(x, irq_handler_exit)
 FPSFO_DECLARE_SYSTRACE(x, softirq_entry)
@@ -47,7 +46,6 @@ FPSFO_DECLARE_SYSTRACE(x, ipi_exit)
 FPSFO_DECLARE_SYSTRACE(x, sched_wakeup)
 FPSFO_DECLARE_SYSTRACE(x, sched_wakeup_new)
 FPSFO_DECLARE_SYSTRACE(x, sched_switch)
-#endif
 
 static DEFINE_MUTEX(xgf_main_lock);
 static int xgf_enable;
